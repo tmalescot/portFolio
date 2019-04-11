@@ -1,0 +1,251 @@
+*{
+  margin: 0px;
+  padding: 0px;
+	font-family: 'Maitree', serif;
+}
+.indexFondPleinEcran{
+  max-width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../images/imageIndexFond.jpg);
+  display: flex;
+  flex-wrap: nowrap;
+}
+.owerlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.ulNavigate{
+  padding: 10px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.liNavigate{
+  margin: 0 3px;
+  color: white;
+  display: inline;
+  font-size: 22px;
+}
+/*Color liens*/
+.textArticle a{
+	color: black;
+	text-decoration: none;
+}
+.textArticle a:hover{
+	color: black;
+	text-decoration: underline;
+}
+.textArticle a:visited{
+	color: black;
+	text-decoration: none;
+}
+.negative{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.negative:visited{
+  color: white;
+  text-decoration: none;
+}
+.negative:hover{
+  color: orange;
+  text-decoration: none;
+}
+/*Fin liens*/
+.indexBandeau{
+  margin-top: 210px;
+  width: 100%;
+  height: 100px;
+}
+.indexTextBandeau{
+  margin-left: 60px;
+	font-weight: 600;
+  font-size: 45px;
+  color: #E2E2E2;
+	text-decoration-color: #E2E2E2;
+  transition: 2s;
+}
+.indexTextBandeau:hover{
+  color: orange;
+  text-decoration-color: orange;
+}
+input, textarea, select, fieldset{
+  border-color: #585858;
+  border-style: solid;
+}
+input, fieldset{
+	border-width: 1px;
+}
+textarea{
+	resize: vertical; /* N'autorise la redimention vertical uniquement*/
+}
+fieldset{
+	padding: 20px 70px;
+}
+.alertUserMail{ /* On définit une couleur spécial pour le fieldset qui indique l'envoi du mail */
+	border-color: #FF4233;
+	border-style: solid;
+}
+.btnEnvoyer{
+  border-width: 3px;
+  border-radius: 2px;
+  padding: 0 15px;
+  background-color: #585858;;
+  color: white;
+  transition: 0.3s;
+}
+.btnEnvoyer:hover{
+  background-color: orange;
+  border-color: orange;
+  color: black;
+}
+.article{
+	padding: 50px 250px;
+}
+.titleArticle{
+  display: inline-block;
+  position: relative;
+	font-weight: 500;
+	font-size: 35px;
+}
+/*Title animations*/
+.titleArticle:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.titleArticle:hover:before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*End title animations*/
+.textArticle{
+	font-weight: 300;
+	font-size: 19px;
+	text-align: justify;
+	padding: 20px 40px;
+}
+.artPair{
+	background-color: #F0F0F0;
+}
+.artImpair{
+	background-color: #DCDCDC;
+}
+.resumStage{
+	display: flex;
+}
+.stage{
+	padding: 20px;
+  margin: 15px;
+	text-align: justify;
+  border: 4px solid #DCDCDC;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.stage:hover{
+  border-color: orange;
+}
+.titleStage{
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+.ulPresentStage{
+  padding: 0 50px 20px 50px;
+}
+.resumProjects{
+	display: flex;
+}
+.projects{
+	padding: 20px;
+  margin: 15px;
+	text-align: justify;
+  border: 4px solid #F0F0F0;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.projects:hover{
+  border-color: orange;
+}
+.titleProjects{
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+.ulPresentProjects{
+  padding: 0 50px 20px 50px;
+}
+.resumTechWatch{
+  width: 100%;
+  display:flex;
+}
+.resumTechWatch div{
+  margin: 15px;
+}
+.imgTechWatch{
+  width: 40%;
+}
+.imgTechWatch img{
+  width: 100%;
+  height: 100%;
+}
+.techWatch{
+  width: 60%;
+  border: 4px solid #DCDCDC;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.techWatch:hover{
+  border-color: orange;
+}
+.titleSujetVeille{
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+.footer{
+  color: white;
+  background-color: #303030;
+  transition: 0.3s;
+}
+.resumFooter{
+  display: flex;
+  padding: 0 30px;
+}
+.resumFooter div{
+  margin: 10px;
+}
+.mentionLegale{
+  background-color: white;
+}
+.mentionLegale p{
+  padding-left: 10px;
+  font-size: 13px;
+}
+.titleFooter{
+  display: inline;
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+.displayerLogo{
+  display: flex;
+}
